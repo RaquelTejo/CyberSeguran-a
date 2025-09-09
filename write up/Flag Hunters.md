@@ -46,6 +46,4 @@ Através do input do `CROWD` escrevemos `;RETURN 0` para o programa reiniciar a 
 
 A flag é revelada no início da saída do script, através do arquivo lido flag.txt.
 
-Flag:
-
- picoCTF{70637h3r_f0r3v3r_a5202532} 
+**Flag:** `picoCTF{70637h3r_f0r3v3r_a5202532}`
