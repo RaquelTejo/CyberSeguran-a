@@ -13,7 +13,7 @@ O detalhe importante é que existe uma parte escondida no início da música —
 - Conexão remota com netcat:   
 
 ```bash 
-nc verbal-sleep.picoctf.net 61366`
+nc verbal-sleep.picoctf.net 61366
 ```
 
 #### Análise e Exploração do desafio 
