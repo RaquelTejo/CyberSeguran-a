@@ -1,6 +1,6 @@
 # RED (picoCTF)  
 ###### Solved by @RaquelTejo
-> Este é a resolução de um desafio desafio de forense RED da plataforma picoCTF. A resolução envolve analisar pistas, inspecionar metadados e extrair informações ocultas em uma imagem utilizando esteganografia LSB (Least Significant Bit).
+> Este é a resolução de um desafio desafio de forense RED da plataforma [picoCTF](https://picoctf.org/). A resolução envolve analisar pistas, inspecionar metadados e extrair informações ocultas em uma imagem utilizando esteganografia LSB (Least Significant Bit).
 ## Desafio: RED
 #### Introdução  
 
