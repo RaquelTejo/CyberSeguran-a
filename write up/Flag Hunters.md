@@ -21,7 +21,7 @@ nc verbal-sleep.picoctf.net 61366`
 A vulnerabilidade do desafio está no modo como o programa manipula a entrada do usuário durante a execução da música.  
 O objetivo é encontrar um meio de redirecionar o ponteiro de leitura (`lip`) para o início da letra, onde está escondida a flag.  
 
-### 🔍 Entendendo o Código  
+### Entendendo o Código  
 
 - O script carrega o conteúdo de `flag.txt` e armazena em `secret_intro`.  
 - A função `reader()` começa a leitura a partir da label `[VERSE1]`, ignorando o trecho inicial que contém a flag.  
