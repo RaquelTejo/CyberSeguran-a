@@ -1,7 +1,7 @@
 # Flag Hunters (picoCTF)  
 ###### Solved by @RaquelTejo  
 
-> Este é a resolução de um desafio de exploração em Python disponível na plataforma picoCTF.  
+> Este é a resolução de um desafio de exploração em Python disponível na plataforma [picoCTF](https://picoctf.org/).  
 
 ## Desafio: Flag Hunters  
 #### Introdução  
