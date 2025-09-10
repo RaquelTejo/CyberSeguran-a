@@ -1,6 +1,6 @@
 # Cookie Monster Secret Recipe (picoCTF)  
 ###### Solved by @RaquelTejo
-> Este é a resolução de um desafio de cyber segurança da plataforma picoCTF.  
+> Este é a resolução de um desafio de cyber segurança da plataforma [picoCTF](https://picoctf.org/).  
 
 ## Desafio: Cookie Monster Secret Recipe (Web Exploitation)  
 #### Introdução  
@@ -34,5 +34,6 @@ Para descodificar o valor achado nos Cookies, foi utilizado o site [dcode](https
 A flag obtida ao resolver o desafio é:
 
     picoCTF{c00k1e_m0nster_l0ves_c00kies_4736F6CB}
+
 
 
