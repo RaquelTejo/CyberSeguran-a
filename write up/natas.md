@@ -37,18 +37,18 @@ A flag obtida ao resolver o desafio é:
 #### Análise Inicial  
 
 Ao acessar a página fornecida, mostra uma breve mensagem com uma dica.  
-`You can find the password for the next level on this page.`
+`You can find the password for the next level on this page, but rightclicking has been blocked!`
 
-Isso direciona a investigação diretamente para dentro das informações do site.  
+Isso direciona a investigação diretamente para dentro das informações do site. Mas dessa vez não podemos usar o botão direito do mouse.  
 
 #### Resolvendo o Level  
 
-Apertando o botão direito do mouse em qualquer lugar do site e clicando em `inspecionar elemento`, foi possível acessar a aba `Sources`  
-Nessa seção, ao abrir os **Index**, foi encontrado a senha para o level 1 `0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq`.  
+Apertando `CTRL + SHIFT + C`, foi possível acessar a aba `Sources`  
+Nessa seção, ao abrir os **Index**, foi encontrado a senha para o level 2 `TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI`.  
 
 ## Flag
 
 A flag obtida ao resolver o desafio é:
 
-    0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
+    TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
 
