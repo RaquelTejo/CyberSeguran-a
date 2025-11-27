@@ -4,7 +4,7 @@
 
 #### Introdução  
 
-Os desafios do Natas faz parte da categoria *Web Exploitation*.  
+Os desafios do Natas faz parte da categoria *web-security* .  
 A proposta é analisar o funcionamento de uma aplicação web simples e o objetivo final é descobrir a flag oculta, que é a senha para acessar o próximo level  
 
 ## Level 0
