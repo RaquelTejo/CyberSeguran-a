@@ -1,38 +1,32 @@
-# Cookie Monster Secret Recipe (picoCTF)  
+# Natas Level 0 ao Level 15
 ###### Solved by @RaquelTejo
-> Este é a resolução de um desafio de cyber segurança da plataforma [picoCTF](https://picoctf.org/).  
+> Este é a resolução do desafio 0 ao 15 da plataforma [Natas](https://overthewire.org/wargames/natas/).  
 
-## Desafio: Cookie Monster Secret Recipe (Web Exploitation)  
 #### Introdução  
 
-O desafio **Cookie Monster Secret Recipe** faz parte da categoria *Web Exploitation* do [picoCTF](https://picoctf.org/).  
-A proposta é analisar o funcionamento de uma aplicação web simples que utiliza cookies para armazenar informações do usuário.  
-O objetivo final é descobrir a flag oculta nos cookies do site manipulando esses dados.  
+Os desafios do Natas faz parte da categoria *Web Exploitation*.  
+A proposta é analisar o funcionamento de uma aplicação web simples e o objetivo final é descobrir a flag oculta, que é a senha para acessar o próximo level  
 
-- [Página do desafio](http://verbal-sleep.picoctf.net:58340)  
+## Level 0
+
+- [Página do desafio](http://natas0.natas.labs.overthewire.org)  
 
 #### Análise Inicial  
 
-Ao acessar o endereço fornecido, a página mostra uma breve mensagem com uma dica.  
-Essa indicação sugere que a identidade do usuário não é armazenada em banco de dados ou sessão de servidor, mas sim em cookies.  
+Ao acessar a página fornecida, mostra uma breve mensagem com uma dica.  
+`You can find the password for the next level on this page.`
 
-Isso direciona a investigação diretamente para os cookies do site.  
+Isso direciona a investigação diretamente para dentro das informações do site.  
 
-#### Inspeção dos Cookies  
+#### Resolvendo o Level  
 
-Utilizando as ferramentas de desenvolvedor do navegador (`Ctrl + Shift + i`), foi possível acessar a aba **Application** (ou **Storage**, dependendo do navegador).  
-Nessa seção, ao abrir os **Cookies**, foi encontrado um registro chamado `name`.  
-
-O valor armazenado nesse cookie era uma sequência em formato base64:  `cGljb0NURntjMDBrMWVfbTBuc3Rlcl9sMHZlc19jMDBraWVzXzQ3MzZGNkNCfQ%3D%3D`
-
-#### Decodificação 
-
-Para descodificar o valor achado nos Cookies, foi utilizado o site [dcode](https://www.dcode.fr/code-base-64).
+Apertando o botão direito do mouse em qualquer lugar do site e clicando em `inspecionar elemento`, foi possível acessar a aba `Sources`  
+Nessa seção, ao abrir os **Index**, foi encontrado a senha para o level 1 `0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq`.  
 
 ## Flag
 
 A flag obtida ao resolver o desafio é:
 
-    picoCTF{c00k1e_m0nster_l0ves_c00kies_4736F6CB}
+    0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
 
 
