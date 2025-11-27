@@ -52,3 +52,28 @@ A flag obtida ao resolver o desafio é:
 
     TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
 
+
+
+## Level 2
+
+- [Página do desafio](http://natas2.natas.labs.overthewire.org)  
+> login : `natas2` senha : `TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI` 
+#### Análise Inicial  
+
+Ao acessar a página fornecida, mostra uma breve mensagem com uma dica.  
+`There is nothing on this page `
+
+Isso direciona a investigação não diretamente para dentro das informações do site.
+
+#### Resolvendo o Level  
+
+Apertando `CTRL + SHIFT + C`, foi possível acessar a aba `Elements`  
+Nessa seção, ao abrir os **body**, foi encontrado um link de png  `http://natas2.natas.labs.overthewire.org/files/pixel.png`.
+Ao apagar a parte `pixel.png` fica : `http://natas2.natas.labs.overthewire.org/files/` onde apresenta alguns arquivos, sendo um deles de texto, ao abri-lo conseguimops encontrar a senha para o level 3 `3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH`
+
+## Flag
+
+A flag obtida ao resolver o desafio é:
+
+    3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+
