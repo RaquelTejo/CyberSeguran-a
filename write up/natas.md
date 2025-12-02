@@ -98,3 +98,66 @@ Nessa seção, ao abrir os **Index**, foi encontrado o comentário `No more info
 A flag obtida ao resolver o desafio é:
 
     QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+
+
+
+## Level 4
+
+- [Página do desafio]( http://natas3.natas.labs.overthewire.org)  
+> login : `natas4` senha : `QryZXc2e0zahULdHrtHxzyYkj59kUxLQ` 
+#### Análise Inicial  
+
+Ao acessar a página fornecida, mostra uma breve mensagem com uma dica.  
+`Access disallowed. You are visiting from "" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"` e um botão de recarregar a página,clicando no botão a dica muda : `Access disallowed. You are visiting from "http://natas4.natas.labs.overthewire.org/index.php" while authorized users should come only from "http://natas5.natas.labs.overthewire.org/"`
+
+Isso direciona a investigação não diretamente para dentro das informações do site.
+
+#### Resolvendo o Level  
+
+Para acessar a página corretamente, foi necessário enviar dois headers personalizados:
+
+Authorization: o login do desafio (natas4 + senha) encodado em Base64
+
+Referer: um valor falso apontando para:
+http://natas5.natas.labs.overthewire.org/
+
+
+Gerando o Authorization Base64
+
+A credencial do nível é:
+natas4:QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+
+
+Esta string foi convertida para Base64 usando PowerShell:
+$pair = "natas4:QryZXc2e0zahULdHrtHxzyYkj59kUxLQ"
+$bytes = [System.Text.Encoding]::ASCII.GetBytes($pair)
+$base64 = [Convert]::ToBase64String($bytes)
+
+
+O resultado gerou o token usado em:
+Authorization: Basic [base64]
+
+
+Fazendo a requisição
+
+Foi enviado:
+Invoke-WebRequest `
+  -Uri "http://natas4.natas.labs.overthewire.org/" `
+  -Headers @{
+    "Referer" = "http://natas5.natas.labs.overthewire.org/"
+    "Authorization" = "Basic $base64"
+  }
+| Select-Object -ExpandProperty Content
+
+
+O servidor aceita o Referer falso e responde com:
+
+Access granted. The password for natas5 is 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+
+
+## Flag
+
+A flag obtida ao resolver o desafio é:
+
+    0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+
