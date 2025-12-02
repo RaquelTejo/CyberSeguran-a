@@ -152,7 +152,7 @@ Invoke-WebRequest `
 
 O servidor aceita o Referer falso e responde com:
 
-Access granted. The password for natas5 is 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+Access granted. The password for natas5 is `0n35PkggAPm2zbEpOU802c0x0Msn1ToK`
 
 
 ## Flag
