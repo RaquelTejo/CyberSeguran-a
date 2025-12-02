@@ -77,3 +77,24 @@ A flag obtida ao resolver o desafio é:
 
     3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 
+## Level 3
+
+- [Página do desafio]( http://natas3.natas.labs.overthewire.org)  
+> login : `natas3` senha : `3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH` 
+#### Análise Inicial  
+
+Ao acessar a página fornecida, mostra uma breve mensagem com uma dica.  
+`There is nothing on this page `
+
+Isso direciona a investigação não diretamente para dentro das informações do site.
+
+#### Resolvendo o Level  
+
+Apertando `CTRL + SHIFT + C`, foi possível acessar a aba `Sources`  
+Nessa seção, ao abrir os **Index**, foi encontrado o comentário `No more information leaks!! Not even Google will find it this time...`, então abri manualmente o arquivo robots.txt adicionando `/robots.txt` ao final do link , ficando : `http://natas3.natas.labs.overthewire.org/robots.txt`. Dentro do robots.txt aparece: `Disallow: /s3cr3t/` , adicionando `/s3cr3t/` ao finaldo link fica: `http://natas3.natas.labs.overthewire.org/s3cr3t/` onde apresenta alguns arquivos, sendo um deles de texto, ao abri-lo conseguimops encontrar a senha para o level 4 `QryZXc2e0zahULdHrtHxzyYkj59kUxLQ`
+
+## Flag
+
+A flag obtida ao resolver o desafio é:
+
+    QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
