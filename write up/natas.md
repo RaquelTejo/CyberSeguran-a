@@ -91,7 +91,7 @@ Isso direciona a investigação não diretamente para dentro das informações d
 #### Resolvendo o Level  
 
 Apertando `CTRL + SHIFT + C`, foi possível acessar a aba `Sources`  
-Nessa seção, ao abrir os **Index**, foi encontrado o comentário `No more information leaks!! Not even Google will find it this time...`, então abri manualmente o arquivo robots.txt adicionando `/robots.txt` ao final do link , ficando : `http://natas3.natas.labs.overthewire.org/robots.txt`. Dentro do robots.txt aparece: `Disallow: /s3cr3t/` , adicionando `/s3cr3t/` ao finaldo link fica: `http://natas3.natas.labs.overthewire.org/s3cr3t/` onde apresenta alguns arquivos, sendo um deles de texto, ao abri-lo conseguimops encontrar a senha para o level 4 `QryZXc2e0zahULdHrtHxzyYkj59kUxLQ`
+Nessa seção, ao abrir os **Index**, foi encontrado o comentário `No more information leaks!! Not even Google will find it this time...`, então abri manualmente o arquivo robots.txt adicionando `/robots.txt` ao final do link , ficando : `http://natas3.natas.labs.overthewire.org/robots.txt`. Dentro do robots.txt aparece: `Disallow: /s3cr3t/` , adicionando `/s3cr3t/` ao finaldo link fica: `http://natas3.natas.labs.overthewire.org/s3cr3t/` onde apresenta alguns arquivos, sendo um deles de texto, ao abri-lo conseguimos encontrar a senha para o level 4 `QryZXc2e0zahULdHrtHxzyYkj59kUxLQ`
 
 ## Flag
 
@@ -103,7 +103,7 @@ A flag obtida ao resolver o desafio é:
 
 ## Level 4
 
-- [Página do desafio]( http://natas3.natas.labs.overthewire.org)  
+- [Página do desafio](http://natas4.natas.labs.overthewire.org)  
 > login : `natas4` senha : `QryZXc2e0zahULdHrtHxzyYkj59kUxLQ` 
 #### Análise Inicial  
 
@@ -161,3 +161,65 @@ A flag obtida ao resolver o desafio é:
 
     0n35PkggAPm2zbEpOU802c0x0Msn1ToK
 
+
+## Level 5
+
+- [Página do desafio](http://natas5.natas.labs.overthewire.org)  
+> login : `natas5` senha : `0n35PkggAPm2zbEpOU802c0x0Msn1ToK` 
+#### Análise Inicial  
+
+Ao acessar a página fornecida, mostra uma breve mensagem com uma dica.  
+`You are not logged in. `
+
+Isso indica que o acesso depende de cookies, não de headers ou arquivos.
+
+#### Resolvendo o Level  
+
+Abrindo o DevTools (F12) na aba Application > Cookies, aparece: `loggedin = 0`,Mudando esse valor para: `loggedin = 1`  
+e recarregar a página libera  a senha para o level 6 `ZtMcX3ZqB7Lc8NCEfFxYJ3h5JiRcy5gM`
+
+## Flag
+
+A flag obtida ao resolver o desafio é:
+
+    ZtMcX3ZqB7Lc8NCEfFxYJ3h5JiRcy5gM
+
+
+## Level 6
+
+- [Página do desafio](http://natas6.natas.labs.overthewire.org)  
+> login : `natas6` senha : `ZtMcX3ZqB7Lc8NCEfFxYJ3h5JiRcy5gM` 
+#### Análise Inicial  
+
+Ao acessar a página fornecida, exibe um formulário pedindo uma secret key.
+
+#### Resolvendo o Level  
+
+Ao abrir o código-fonte via View Source, encontra-se: `include "includes/secret.inc";`,Acessando manualmente: `http://natas6.natas.labs.overthewire.org/includes/secret.inc`  
+dentro do arquivo encontramos a senha para o level 7 `sWZ5y8Y21u9ZPjmB7THTq8fWx3x8P4zR`
+
+## Flag
+
+A flag obtida ao resolver o desafio é:
+
+    sWZ5y8Y21u9ZPjmB7THTq8fWx3x8P4zR
+
+
+## Level 7
+
+- [Página do desafio](http://natas7.natas.labs.overthewire.org)  
+> login : `natas7` senha : `sWZ5y8Y21u9ZPjmB7THTq8fWx3x8P4zR` 
+#### Análise Inicial  
+
+Ao acessar a página fornecida, exibe um formulário pedindo uma secret key.
+
+#### Resolvendo o Level  
+
+Ao abrir o código-fonte via View Source, encontra-se: `include "includes/secret.inc";`,Acessando manualmente: `http://natas6.natas.labs.overthewire.org/includes/secret.inc`  
+dentro do arquivo encontramos a senha para o level 7 `sWZ5y8Y21u9ZPjmB7THTq8fWx3x8P4zR`
+
+## Flag
+
+A flag obtida ao resolver o desafio é:
+
+    sWZ5y8Y21u9ZPjmB7THTq8fWx3x8P4zR
